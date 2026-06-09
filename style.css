@@ -95,39 +95,52 @@ textarea {
 
 .hamburger {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 20px;
   top: 24px;
-  z-index: 25;
+  z-index: 60;
   flex-direction: column;
   justify-content: space-between;
   width: 28px;
   height: 20px;
   background: none;
   cursor: pointer;
+  padding: 0;
+  border: none;
+  pointer-events: auto;
+  font-size: 32px;
+  color: #ffffff;
+  line-height: 1;
+  align-items: center;
+}
+
+.showandhidethis {
+  display: none;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.hamburger.active .showandhidethis {
+  display: block;
 }
 
 .hamburger__line {
   display: block;
   width: 100%;
-  height: 2px;
-  background: #fff;
+  height: 2.5px;
+  background: #ffffff;
   transition: all 0.3s ease;
   border-radius: 1px;
 }
 
-.hamburger.active .hamburger__line:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
+.hamburger.active .hamburger__line {
+  display: none;
 }
 
-.hamburger.active .hamburger__line:nth-child(2) {
-  opacity: 0;
+.nav__heart_logo {
+  z-index: 15;
 }
-
-.hamburger.active .hamburger__line:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
-
 .mobile-menu {
   display: none;
   position: fixed;
@@ -135,13 +148,13 @@ textarea {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.95);
-  z-index: 22;
+  background: #6c1212e0;
+  z-index: 19;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
   opacity: 0;
   pointer-events: none;
   padding-top: 80px;
@@ -150,7 +163,10 @@ textarea {
 .mobile-menu.active {
   display: flex;
   opacity: 1;
-  pointer-events: all;
+}
+
+.mobile-menu.active .mobile-menu__link {
+  pointer-events: auto;
 }
 
 .mobile-menu__link {
@@ -161,6 +177,7 @@ textarea {
   color: #fff;
   text-decoration: none;
   transition: color 0.2s ease;
+  pointer-events: none;
 }
 
 .mobile-menu__link:hover {
@@ -305,8 +322,10 @@ a {
 
   .hamburger {
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 20px;
+    top: 24px;
+    z-index: 60;
   }
 
   .nav__left {
@@ -593,3 +612,88 @@ a {
 .hero__bg.bw {
   filter: grayscale(100%);
 } */
+/* ─── QUOTE STRIP ─── */
+
+.quote-strip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px 40px 20px 40px;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); */
+}
+
+.quote-item {
+  text-align: center;
+}
+
+.quote-mark {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  line-height: 0.5;
+  color: rgba(255, 255, 255, 0.15);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.quote-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.92);
+  font-style: italic;
+}
+
+.quote-divider {
+  width: 30px;
+  height: 1px;
+  /* background: rgba(255, 255, 255, 0.2); */
+}
+
+.quote-source {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.quote-item,
+.quote-divider,
+.quote-source {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.quote-item.visible,
+.quote-divider.visible,
+.quote-source.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quote-item:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.quote-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.quote-divider:nth-child(4) {
+  transition-delay: 0.2s;
+}
+.quote-divider:nth-child(6) {
+  transition-delay: 0.35s;
+}
+.quote-source {
+  transition-delay: 0.5s;
+}

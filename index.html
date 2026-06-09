@@ -37,10 +37,11 @@
       <!-- ── TOP NAV ── -->
       <header class="nav">
         <!-- Hamburger Menu Button (Mobile) -->
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
+          <div class="showandhidethis">X</div>
         </button>
 
         <!-- Left nav links -->
@@ -48,7 +49,7 @@
           <img
             src="images/logo.png"
             alt="Heart icon"
-            class="nav__heart smooth-class"
+            class="nav__heart nav__heart_logo smooth-class"
             height="62"
           />
         </nav>
@@ -192,6 +193,57 @@
         </p>
       </div>
 
+      <div style="position: relative; display: inline-block; margin-top: 0px;">
+  <a
+    href="https://www.youtube.com/watch?v=D0fwdqu5TlQ"
+    target="_blank"
+    class="smooth-class"
+  >
+    <img
+      src="images/videoimage.png"
+      alt="Watch Breno & Bella - Wicked Game"
+      style="width: 100%; max-width: 800px; border-radius: 12px;   filter: grayscale(100%);
+"
+      class="smooth-class"
+    />
+
+    <div
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 72px;
+        color: white;
+        text-shadow: 0 0 20px rgba(0,0,0,0.8);
+      "
+      class="smooth-class"
+    >
+      ▶
+    </div>
+  </a>
+</div>
+
+<!-- QUOTE -->
+<div class="quote-strip">
+  <div class="quote-item">
+    <span class="quote-mark">"</span>
+    <p class="quote-text">Heartstrings Duo were superb</p>
+  </div>
+  <div class="quote-divider"></div>
+  <div class="quote-item">
+    <span class="quote-mark">"</span>
+    <p class="quote-text">Exceptional</p>
+  </div>
+  <div class="quote-divider"></div>
+  <div class="quote-item">
+    <span class="quote-mark">"</span>
+    <p class="quote-text">Incredible</p>
+  </div>
+  <p class="quote-source">— Celebrity Cruises guest feedback</p>
+</div>
+
+
       <!-- 3 IMAGES -->
       <div class="about__images">
         <div class="about__img-wrap">
@@ -203,6 +255,28 @@
         <div class="about__img-wrap">
           <img src="images/3.png" alt="Heartstrings Duo" />
         </div>
+      </div>
+
+      <div class="about__bio">
+        <p>
+         Bella & Breno have spent many years working on some of the worlds most coveted cruise ships including Celebrity, MSC and
+Silversea and even have their own headliner acts: ‘Dolly & Cash’ and ‘Country Legends’. They also work on land specialising in
+weddings, luxury private events, exclusive parties, hotel residencies and corporate entertainment. Collectively, they have
+performed in countless venues across Australia, Brazil and the UK including London’s prestigious Art’s Club Mayfair.
+Their expansive repertoire allows them to seamlessly transition between relaxed daytime lounge music, romantic momentous
+performances and high energy late-night and even theatrical entertainment. This is credited to Bella’s background in cabaret,
+nightclubs and theatre, combined with Breno’s creative and unique soulful musicianship. They can perform acoustically, with
+tracks and live looping/reverb pedals, or alongside a full band and even orchestra depending on the event. They are also
+highly adaptable musicians with a quick turnaround for learning new material, creating harmonies and accommodating song
+requests.<br><br>
+This duo offers an elevated entertainment experience founded by a unique combination of international performance
+expertise and formal education. Bella’s background includes a Bachelor of Arts in Musical Theatre (BAPA), a Master’s degree
+in Writing (Swinburne), and formal training in classical voice, piano (AMEB grade 1), and violin (AMEB grade 7). Breno’s
+possession of multilingual proficiency in Portuguese, English, and Spanish enables meaningful audience connection across
+diverse cultural settings and enhances the duo’s international appeal. Together, they perform in English, Portuguese,
+Spanish, French, and Italian, creating a refined, world-class musical experience that resonates with guests across a wide
+range of cultures, age groups, and musical tastes. Don’t miss out on booking Heartstrings Duo to elevate your venue or event!
+        </p>
       </div>
 
       <!-- AUDIO TITLE -->
@@ -218,7 +292,7 @@
    
 
       <!-- SPOTIFY EMBED -->
-      <div class="about__spotify">
+      <!-- <div class="about__spotify">
         <iframe
           data-testid="embed-iframe"
           style="border-radius: 12px"
@@ -230,7 +304,9 @@
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </div>
+      </div> -->
+
+
 
       <div class="about__contact" style="margin-top: 32px; font-size: 10px; color: #555">
       contact us at bellaandbreno@gmail.com
