@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heartstrings duo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="" href="images/logo.png">
+
+    <!-- Google Fonts: Cormorant Garamond for the display name, Inter for nav/body -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ───── HERO SECTION ───── -->
+    <section class="hero">
+      <!-- Background photo — replace src with your own press shot -->
+      <img
+        class="hero__bg"
+        src="images/bellaandbrenomain.jpg"
+        alt="Heartstrings duo"
+      />
+
+      <!-- Dark overlay so text stays legible -->
+      <div class="hero__overlay"></div>
+
+      <!-- ── TOP NAV ── -->
+      <header class="nav">
+        <!-- Hamburger Menu Button (Mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+
+        <!-- Left nav links -->
+        <nav class="nav__left smooth-class">
+          <img
+            src="images/logo.png"
+            alt="Heart icon"
+            class="nav__heart smooth-class"
+            height="62"
+          />
+        </nav>
+
+        <!-- Centered artist name -->
+        <div class="smooth-class">
+          <a href="#" class="nav__logo smooth-class">HEARTSTRINGS DUO</a>
+        </div>
+
+        <!-- Right nav links -->
+        <nav class="nav__right">
+          <a href="#shows" target="_blank" class="smooth-class nav__link">Shows</a>
+          <a href="https://open.spotify.com/artist/0qDuitQTTpE5LlqalxRjbC?si=E9Q41IYhRRC7_LuoyxGakA" target="_blank" class="smooth-class nav__link">Music</a>
+          <a href="mailto:bellaandbreno@gmail.com" target="_blank" class="smooth-class nav__link">Contact</a>
+        </nav>
+      </header>
+
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="#shows" class="mobile-menu__link">Shows</a>
+        <a href="https://open.spotify.com/artist/0qDuitQTTpE5LlqalxRjbC?si=E9Q41IYhRRC7_LuoyxGakA" class="mobile-menu__link">Music</a>
+        <a href="mailto:bellaandbreno@gmail.com" class="mobile-menu__link">Contact</a>
+      </nav>
+
+      <!-- ── BOTTOM BAR: release callout ── -->
+      <div class="hero__release">
+        <div class="hero__release smooth-class">
+          <div class="hero__tagline">Music for memorable moments</div>
+        </div>
+        <div class="hero__release-icons">
+          <!-- Social icons (top-right corner) -->
+          <div
+            class=""
+            style="
+              display: flex;
+              width: 100%;
+              gap: 8px;
+              justify-content: center;
+            "
+          >
+            <!-- Spotify -->
+            <a
+              href="https://open.spotify.com/artist/0qDuitQTTpE5LlqalxRjbC?si=E9Q41IYhRRC7_LuoyxGakA"
+              class="social-icon smooth-class"
+              aria-label="Spotify"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="white"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.441 17.31a.75.75 0 01-1.032.25c-2.825-1.726-6.38-2.116-10.567-1.16a.75.75 0 01-.334-1.463c4.583-1.047 8.514-.596 11.683 1.341a.75.75 0 01.25 1.032zm1.453-3.228a.937.937 0 01-1.288.308c-3.232-1.987-8.158-2.563-11.982-1.402a.937.937 0 11-.545-1.794c4.37-1.327 9.8-.685 13.507 1.601a.937.937 0 01.308 1.287zm.125-3.36C15.239 8.56 8.8 8.34 5.14 9.424a1.125 1.125 0 11-.654-2.153c4.217-1.28 11.22-1.033 15.647 1.605a1.125 1.125 0 11-1.114 1.946z"
+                />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/heartstringsduomusic?igsh=MXYxYXA0NWxvajNzNg=="
+              class="social-icon smooth-class"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="white"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308C2.497 19.466 2.226 18.2 2.163 16.833 2.105 15.567 2.093 15.187 2.093 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.446 2.567 5.713 2.296 7.079 2.233 8.345 2.175 8.725 2.163 12 2.163zm0-2.163C8.741 0 8.333.013 7.053.072 5.197.157 3.355.636 1.999 1.999.636 3.355.157 5.197.072 7.053.013 8.333 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.856.564 3.698 1.927 5.061 1.356 1.356 3.198 1.842 5.054 1.927C8.333 23.987 8.741 24 12 24s3.667-.013 4.947-.072c1.856-.085 3.698-.564 5.054-1.927 1.363-1.363 1.842-3.205 1.927-5.061C23.987 15.668 24 15.259 24 12c0-3.259-.013-3.667-.072-4.947-.085-1.856-.564-3.698-1.927-5.054C20.645.636 18.803.157 16.947.072 15.667.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                />
+              </svg>
+            </a>
+            <!-- TikTok -->
+            <a
+              href="https://www.tiktok.com/@heartstringsduomusic?_r=1&_t=ZN-96qyUI6Q2cA"
+              class="social-icon smooth-class"
+              aria-label="TikTok"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="white"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.79a4.85 4.85 0 01-1.01-.1z"
+                />
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a
+              href="https://www.youtube.com/@heartstringsduomusic"
+              class="social-icon smooth-class"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="white"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ───── ABOUT SECTION ───── -->
+    <section class="about">
+      <!-- BIO -->
+      <div class="about__bio">
+        <p>
+          Bella & Breno are an internationally experienced music duo that are
+          known for creating unique and heartfelt arrangements of widely loved
+          songs across multiple genres and decades alongside creating their own
+          original compositions.
+        </p>
+        <p>
+          The pair both possess distinctive vocal timbres, Breno's deep vintage
+          voice perfectly complementing Bella's high agile and emotive vocals.
+          Combined with their natural chemistry, undeniable stage presence and
+          glamorous timeless aesthetic, they create performances that leave a
+          lasting impression.
+        </p>
+      </div>
+
+      <!-- 3 IMAGES -->
+      <div class="about__images">
+        <div class="about__img-wrap">
+          <img src="images/1.png" alt="Heartstrings Duo" />
+        </div>
+        <div class="about__img-wrap">
+          <img src="images/2.png" alt="Heartstrings Duo" />
+        </div>
+        <div class="about__img-wrap">
+          <img src="images/3.png" alt="Heartstrings Duo" />
+        </div>
+      </div>
+
+      <!-- AUDIO TITLE -->
+       <div style="margin-top: 55px;">
+      <h2 class="about__audio-title">Breno & Bella - Wicked Game</h2>
+      <p class="about__audio-subtitle" style="margin-bottom: 20px;">hear us sing below...</p>
+      
+        <audio controls style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <source src="audio/wickedgame.mp3" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+        </div>
+   
+
+      <!-- SPOTIFY EMBED -->
+      <div class="about__spotify">
+        <iframe
+          data-testid="embed-iframe"
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/5C0Z42gGIT15FzHJ7HpobZ?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <div class="about__contact" style="margin-top: 32px; font-size: 10px; color: #555">
+      contact us at bellaandbreno@gmail.com
+    </section>
+
+  </body>
+</html>
+
+<script src="script.js"></script>
