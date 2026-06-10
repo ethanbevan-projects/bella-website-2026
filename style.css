@@ -697,3 +697,15 @@ a {
 .quote-source {
   transition-delay: 0.5s;
 }
+
+play-button {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .play-button {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
